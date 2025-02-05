@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family:Poppins , sans-serif ;
+}
+
+/* navbar */
+.logo{
+    font-size: 30px !important;
+}
+.logo span{
+    color: aqua;
+}
+#doc{
+    color:white;
+    font-weight: bold;
+}
+#doc2{
+    color:rgba(69, 66, 73, 0.884);
+    font-weight: bold;
+}
+.nav-link2{
+    border-bottom: 2px solid white transparent;
+    transition: 1s;
+}
+.nav-link2:hover{
+    transition: 1s;
+    border-bottom: 2px solid white;
+    color: white !important;
+}
+.navbar{
+    background:linear-gradient(to right,rgba(69, 66, 73, 0.884),rgb(55, 236, 197));
+    padding-top: 15px !important;
+}
+#navbar{
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 20 !important;
+}
+/* home */
+
+.home{
+    background-image: url(img/monumental_d.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container2{
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 150px;
+}
+.container2 h5{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.container2 h1{
+    color: white;
+    font-size: 90px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.container2 p{
+    color: white;
+    margin-bottom: 30px;
+}
+.container2 button{
+   color: white !important;
+   background:linear-gradient(to right,rgba(69, 66, 73, 0.884),rgb(55, 236, 197)) !important;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left:15px;
+   padding-right:15px;
+   font-size: 20px;
+   border: none;
+   transition: 1s;
+} 
+.container2 button:hover{
+    transition: 1s;
+    color: black !important;
+    background-color: white !important;
+}
+.changetext::after{
+    content: '';
+    color: aqua;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "India";}
+    20%{content: "China";}
+    30%{content: "Italy";}
+    40%{content: "Tokio";}
+    50%{content: "Brazil";}
+    60%{content: "Turkey";}
+    70%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "Pakistan";}
+}
+/* home end */
+
+/* form start */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.form3{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* padding-top: 50px; */
+  margin-bottom: 10px;
+  background-image: url(img2/x2.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  position: relative;
+  max-width: 470px;
+  width: 100%;
+  height: 90%;
+  border-radius: 12px;
+  padding: 20px
+    30px
+    120px;
+  background: #031f6d;
+  box-shadow: 0
+    5px
+    10px
+    rgba(
+      0,
+      0,
+      0,
+      0.1
+    );
+  overflow: hidden;
+}
+.form.login {
+  position: absolute;
+  left: 50%;
+  bottom: -86%;
+  transform: translateX(
+    -50%
+  );
+  width: calc(
+    100% +
+      220px
+  );
+  padding: 20px
+    140px;
+  border-radius: 50%;
+  height: 100%;
+  background: white;
+  transition: all
+    0.6s
+    ease;
+}
+.wrapper.active .form.login {
+  bottom: -15%;
+  border-radius: 35%;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+.form header {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form.login
+  header {
+  color: #031f6d;
+  opacity: 0.6;
+}
+.wrapper.active
+  .form.login
+  header {
+  opacity: 1;
+}
+.wrapper.active
+  .signup
+  header {
+  opacity: 0.6;
+}
+.wrapper
+  form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+form input {
+  height: 50px;
+  outline: none;
+  border: none;
+  padding: 0
+    15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #031f6d;
+  border-radius: 8px;
+  background: white;
+}
+form textarea{
+    height: 50px;
+  outline: none;
+  border: none !important;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black !important;
+  border-radius: 8px;
+  background: white !important;
+  padding-top: 10px;
+}
+.form.login
+  input {
+  border: 1px
+    solid
+    #aaa;
+}
+.form.login
+  input:focus {
+  box-shadow: 0
+    1px 0
+    #ddd;
+}
+form
+  .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.checkbox
+  input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  accent-color: #fff;
+  cursor: pointer;
+}
+form
+  .checkbox
+  label {
+  cursor: pointer;
+  color: #fff;
+}
+form a {
+  color: black;
+  text-decoration: none;
+}
+form
+  a:hover {
+  text-decoration: underline;
+}
+form
+  input[type="submit"] {
+  padding: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.form.login
+  input[type="submit"] {
+  background: #031f6d;
+  color: #fff;
+  border: none;
+  }
+ /* form end */
+
+ /* package start */
+#packages{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: black;
+}
+.display-6{
+    font-weight: bold !important;
+    color: white;
+}
+.display-6 span{
+    color: aqua;
+}
+.card img{
+    overflow: hidden !important;
+    border: none; 
+    border-radius: 5px;  
+}
+.card-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: white !important;
+    text-align: left;
+    padding-left: 20px;
+}
+.card span{
+    font-weight: bold;
+    margin-top: 0px;
+    color: white;
+}
+.card{
+    border-radius:50x !important;
+    border: none;
+    height: 500px !important;
+    background-color: rgb(85, 82, 82) !important ;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+.card:hover{
+    border: 2px solid white;
+    transition: 0.5s;
+}
+.card p{
+    padding-left: 20px;
+    text-align: left;
+    padding-right: 20px;
+    color: white;
+}
+.button{
+    background:linear-gradient(to right,rgba(69, 66, 73, 0.884),rgb(55, 236, 197)) ;
+   margin-bottom: 20px;
+   padding-top: 10px !important;
+   padding-bottom: 10px !important;
+   padding-left: 5px !important;
+   padding-right: 5px !important;
+    margin-left: 20px;
+    margin-right: 200px !important;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 1s;
+    color: white !important;
+}
+.button:hover{
+    transition: 1s;
+    color: black !important;
+    background-color: white !important;
+    opacity: 80%;
+}
+.price{
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+}
+
+.rating{
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.rating span {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    }
+    .rating span.active {
+    color: aqua;
+    }
+    
+    /* #displayRating {
+    font-size: large;
+    margin: 10px;
+    color: green;
+    } */
+
+/* package :end */
+
+/* india start */
+.index{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.index .container .row{
+    border-radius: 10px;
+    padding-right: 20px !important;
+}
+.index2{
+    background-color:  rgb(85, 82, 82) !important ;
+}
+.india{
+    padding-top: 150px !important;
+    padding-bottom: 200px !important;
+}
+.india2{
+    padding-top: 60px !important;
+    /* padding-right: 50px !important; */
+}
+.india span{
+    font-weight: bold;
+    font-size: 90px;
+    color: aqua;
+    padding-left: 50px;
+}
+.india3{
+    padding-top: 150px !important;
+    padding-bottom: 200px !important;
+}
+.india3 span{
+    font-weight: bold;
+    font-size: 70px;
+    color: aqua;
+    padding-left: 50px;
+}
+.india3 .navbar2{
+    font-size: 15px;
+    color:white !important;
+    margin-left: 60px;
+}
+.india .navbar2{
+    font-size: 15px;
+    color:white !important;
+    margin-left: 60px;
+}
+.navbar3{
+    color: white !important;
+}
+.size2{
+    height: 350px !important;
+    width: 350px !important;
+    border: 20px solid white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.size1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+     height: 350px !important;
+     border: 20px solid white;
+     width: 350px;
+ }
+.content2{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.content3{
+    padding-left: 20px;
+    color: white;
+    margin-top: 100px;
+    font-size: 20px;
+}
+.button2{
+    background:linear-gradient(to right,rgba(69, 66, 73, 0.884),rgb(55, 236, 197)) ;
+   margin-bottom: 20px;
+   padding-top: 10px !important;
+   padding-bottom: 10px !important;
+   padding-left: 10px !important;
+   padding-right: 10px !important;
+    margin-left: 20px;
+    margin-right: 200px !important;
+    margin-top: 10px ;
+    border-radius: 10px;
+    transition: 1s;
+    color: white !important;
+}
+.button2:hover{
+    transition: 1s;
+    color: black !important;
+    background-color: white !important;
+    opacity: 80%;
+}
+
+/* service start */
+
+#service{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.container .text{
+    color: white;
+    text-align: center;
+}
+.logo .card{
+    height: 50px !important;
+}
+.logo .card-title{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.logo p{
+    color: white;
+    font-size: 20px;
+    padding-left: 50px;
+}
+.logo .icon{
+    color: aqua !important;
+    text-align: center !important;
+}
+/* service end */
+/* gallary start */
+
+.gallary{
+    background-color: black;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.gallary .container h1{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.gallary .container .row{
+   /* padding-left: 20px; */
+}
+
+.gallary .container .row img{
+    height: 250px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.load{
+    width: 350px;
+    transition: 0.5s;
+    align-items: center;
+}
+.load:hover{
+    transition: 0.5s;
+    border: 3px solid white;
+}
+/* gallary end */
+
+/* about start */
+.first{
+    color: aqua;
+}
+.about{
+    background-color: black;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.about .container h1{
+    color: white;
+    text-align: center;
+}
+.image2{
+    margin-top: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 1s ease-in-out;
+}
+.image2 :hover{
+    transition: 1s;
+    transform: rotate(180deg);
+}
+.content4{
+    padding-top: 50px;
+    padding-left: 10px;
+    color: white;
+}
+.content4 p{
+    padding-left: 50px;
+}
+.word{
+    padding-top: 100px;
+}
+/* about end */
+
+/* footer start */
+
+.footer{
+    background-color:rgba(69, 66, 73, 0.884);
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.footer .container p{
+    color: white;
+}
+.yellow{
+    color: aqua;
+    font-weight: bold;
+}
+.logo2{
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 4px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.logo2:hover{
+    background-color: white;
+    color: black;
+    border: 20px solid white;
+}
